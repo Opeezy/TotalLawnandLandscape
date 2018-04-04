@@ -1,0 +1,177 @@
+body{		
+	background-color: #F2F3F1;			
+}
+
+#nav-container{	
+	margin: auto;
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+
+.bg-light{
+	background-color: rgba(129, 147, 114, .9) !important;	
+}
+
+.total{
+	margin: auto;
+	width: 100%;	
+}
+
+#container{
+	padding: 0px;
+}
+
+.navbar-brand{
+	color: #FFFFFF !important;
+	font-family: 'Cormorant Garamond', serif; !important;
+	font-size: 1.7rem;
+	border: 1px solid #FFFFFF; 
+	border-radius: 10px;
+	padding: 2px 7px 2px 7px;
+	transition: background-color .8s;
+}
+
+.navbar-brand:hover{
+	background-color: rgba(216, 226, 210, .3);
+}
+
+.active .nav-link{
+	color: #FFFFFF !important;	
+}
+
+.navbar-toggler{
+	 transition: background-color .8s
+}
+
+.navbar-toggler:hover{
+	 background-color: rgba(216, 226, 210, .3);
+}
+
+#contact{
+	float: right;
+}
+
+.nav-item{	
+	font-size: 1.2rem;
+	margin:0px 8px 0px 8px !important;
+	font-family: 'Cormorant Garamond', serif;	
+}
+
+.nav-link{
+	transition: color .1s;
+	color: #E6E6E6 !important;
+}
+
+.nav-link:hover{
+	color: #FFFFFF !important;
+}
+
+#title{
+	/*background-color: rgba(203, 208, 177, .3);
+	background-color: rgba(216, 226, 210, .2);*/
+	background-size: auto;
+	padding: 0px 0px 0px 0px;
+	margin: auto;	 		
+}
+
+.carousel-inner{
+	margin: auto;
+}
+
+.carousel-item{
+	margin: auto;
+}
+
+#carousel{
+	/*padding-left: 0px;
+	padding-right: 0px;	*/
+	padding: 0px;
+	margin: auto;
+}
+
+.carousel{	
+	/*float: left;*/	
+	margin: auto;
+	max-width: 1000px;
+	max-height: auto;
+	padding: 0px;		
+}
+
+.carousel-inner{
+	margin: auto;	
+}
+
+#intro {	
+	text-align: center;
+	margin: 25px 0px 0px 0px;
+	/*padding-right: 180px;*/
+	padding: auto;
+	font-family: 'Cormorant Garamond', serif;
+	/*font-size: 1.5rem;*/	
+	color: #5C7469;
+	
+
+}
+
+#intro h1{
+	font-size: 6vh;
+	text-align: center; 
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#intro hr{
+	border: 1px solid rgba(167, 141, 133, .5);
+	border-radius: 5px;	
+	border-width: .1rem;	
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#intro p{
+	text-align: center;	
+	font-size: 2.8vh;
+}
+
+#testimonial-head{
+	background-color: #FFFFFF;	
+	font-family: 'Cormorant Garamond', serif;
+	margin: 10% 5% 10% 5%;
+	text-align: center;
+	padding: 8% 5% 8% 5%;
+	color: #5C7469;
+	position: relative;	
+}
+
+#testimonial-head h1{
+	text-align: center;
+	color: #5C7469;	
+	font-size: 6vh;
+	padding: 0px;
+	margin: 0% 0% 5% 0%;
+	overflow: hidden;	
+}
+
+#testimonial-head hr{
+	padding: 0px;
+	margin: 2% 0% 2% 0%;		
+	border: 1px solid rgba(133, 133, 133, .7);	
+	width: 100%;	
+}
+
+#testimonial-head p{	
+	text-align: left;
+	/*font-size: 1.7rem;*/
+	font-size: 2.5vh;	
+	padding: auto;
+}
+
+.tes-name{
+	text-align: right;
+}
+
+
+
+
+
