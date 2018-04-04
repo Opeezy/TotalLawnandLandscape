@@ -67,8 +67,8 @@ body{
 }
 
 #title{
-	/*background-color: rgba(203, 208, 177, .3);
-	background-color: rgba(216, 226, 210, .2);*/
+	/*background-color: rgba(203, 208, 177, .3);*/
+	background-color: rgba(216, 226, 210, .3);
 	background-size: auto;
 	padding: 0px 0px 0px 0px;
 	margin: auto;	 		
@@ -103,9 +103,9 @@ body{
 
 #intro {	
 	text-align: center;
-	margin: 25px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	/*padding-right: 180px;*/
-	padding: auto;
+	padding: 2% 2% 0 2%;
 	font-family: 'Cormorant Garamond', serif;
 	/*font-size: 1.5rem;*/	
 	color: #5C7469;
@@ -169,6 +169,50 @@ body{
 
 .tes-name{
 	text-align: right;
+}
+
+#gallery{
+	margin: 0 4% 7% 4%;
+	padding: 0;
+}
+
+.gallery-col{
+	maring: auto;
+}
+
+.card{
+
+}
+
+.card-img-overlay{
+	margin: 5em 0;
+	padding: 0;					
+}
+
+.card-img-overlay h5{
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	position: relative;
+	top: 20%;	
+	text-align: center;	
+}
+
+.card-img-overlay p{
+	font-size: 1em;
+	text-overflow: ellipsis;
+	position: relative;
+	top: 30%;	
+	text-align: center;	
+}
+
+@media (max-width: 576px){
+	.card-img-overlay{
+	top: 35%;		
+	}
+	.card-img-overlay p{
+	visibility: hidden;
+	}
 }
 
 
