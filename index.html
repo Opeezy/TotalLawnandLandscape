@@ -4,13 +4,31 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+		   $('#scroll').click(function() {
+		   		$('html, body').animate({
+				    scrollTop: ($('#info').offset().top)
+				},1000);
+		   		})
+		   // alert($('html').scrollTop())
+		   $(window).scroll(function() {		   		
+		   		 if ($('html').scrollTop() >= 80) {
+			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
+			   } else {
+			   		$('#navbar').addClass('navbar-trans').removeClass('navbar-full');
+			   }
+			});			   
+		});		
+	</script>  
 
 	<title>Total Lawn and Landscape</title>
 
 </head>
-<body>
-	<nav class="navbar">
+<body>	
+	<nav id="navbar" class="navbar-trans">
 		<a class="nav-links" href=""><p>Fence Design</p></a>
 		<a class="nav-links" href=""><p>Landscaping</p></a>
 		<a class="nav-links" href=""><p>Home Renovation</p></a>			
@@ -19,22 +37,45 @@
 		<div class="caption">
 			<h1>Total Lawn and Landscape</h1>
 			<p>We satisfy all your landscaping needs</p>
-			<a href="">Learn more</a>
+			<a id="scroll">Learn more</a>
 		</div>			
-	</section>
-	<div class="divider">
-	</div>	
-	<section class="info">
-		<div class="info-box">
-			<div class="info-text">
-				<div class="info-caption">
-					<h1>Beautifying homes across all of Birmingham</h1>
-					<p>Total Lawn and Landscape specializes in wooden fencing and pride ourselves in our ability to create the privacy for your home or property with our expertise and knowledge.</p>
-				</div>				
-			</div>
+	</section>	
+	<section id="info" class="info">				
+		<div class="info-caption">
+			<h1>Beautifying homes across all of Birmingham</h1>
+			<p>We specializes in wooden fencing and pride ourselves in our ability to create the privacy for your home or property with our expertise and knowledge.</p>
 		</div>		
 	</section>	
+	<section class="services">
+		<div class="serve-box">
+			<h1>We also provide these landscaping services</h1>		
+		</div>
+		<div class="serve-list">
+			<div class="list-item">
+			 	<img src="icons/forest.png">
+				<p>Tree and shrub planting</p>			
+			</div>	
+			<div class="list-item">	
+				<img src="icons/digging.png">
+				<p>Mulch</p>		
+			</div>		
+			<div class="list-item">	
+				<img src="icons/lawn-mower.png">
+				<p>Scheduled lawn care</p>		
+			</div>				
+		</div>		
+	</section>
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+
+<!--  <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+
+ 

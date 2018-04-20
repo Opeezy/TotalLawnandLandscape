@@ -1,0 +1,20 @@
+{
+  "name": "totallawnandlandscape",
+  "version": "1.0.0",
+  "description": "Website for a friend",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Opeezy/TotalLawnandLandscape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Opeezy/TotalLawnandLandscape/issues"
+  },
+  "homepage": "https://github.com/Opeezy/TotalLawnandLandscape#readme",
+  "dependencies": {}
+}
