@@ -10,8 +10,8 @@
 		$(document).ready(function(){
 		   $('#scroll').click(function() {
 		   		$('html, body').animate({
-				    scrollTop: ($('#info').offset().top)
-				},1000);
+				    scrollTop: ($('#info').offset().top - 80)
+				},1500);
 		   		})
 		   // alert($('html').scrollTop())
 		   $(window).scroll(function() {		   		
@@ -29,15 +29,24 @@
 </head>
 <body>	
 	<nav id="navbar" class="navbar-trans">
+		<div class="drop-down">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
 		<a class="nav-links" href=""><p>Fence Design</p></a>
 		<a class="nav-links" href=""><p>Landscaping</p></a>
 		<a class="nav-links" href=""><p>Home Renovation</p></a>			
 	</nav>
 	<section class="title">		
 		<div class="caption">
-			<h1>Total Lawn and Landscape</h1>
-			<p>We satisfy all your landscaping needs</p>
-			<a id="scroll">Learn more</a>
+			<div class="head">
+				<h1>Total Lawn and Landscape</h1>
+				<p>We satisfy all your landscaping needs</p>
+			</div>
+			<div class="learn">
+				<a id="scroll">Learn more</a>
+			</div>
 		</div>			
 	</section>	
 	<section id="info" class="info">				
@@ -57,7 +66,7 @@
 			</div>	
 			<div class="list-item">	
 				<img src="icons/digging.png">
-				<p>Mulch</p>		
+				<p>Mulch installation</p>		
 			</div>		
 			<div class="list-item">	
 				<img src="icons/lawn-mower.png">
@@ -65,8 +74,10 @@
 			</div>				
 		</div>		
 	</section>
-
-	<script type="text/javascript" src="script.js"></script>
+	<div id="spacer">
+	</div>
+	<section class="testimonial">		
+	</section>	
 </body>
 </html>
 
