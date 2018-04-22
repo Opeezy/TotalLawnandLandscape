@@ -58,7 +58,7 @@ body {
 	width: 100%;
 	height: 35em;	
 	color: white;
-	background-color: rgba(182, 182, 182, .4);	
+	background-color: rgba(182, 182, 182, .3);	
 }
 
 .caption {		
@@ -213,14 +213,83 @@ body {
 #spacer {
 	width: 100%;
 	height: 25em;
-	background-color: rgba(182, 182, 182, .4);	
+	background-color: rgba(182, 182, 182, .3);	
 }
 
 .testimonial {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 35em;
 	background: white;
+	margin: 0;
+	padding: 0;
 }
+
+.arrows {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
+	height: 100%;
+	font-size: 3em;
+	cursor: pointer;
+	color: #979797;
+}
+
+#arrow-left {	
+}
+
+#arrow-left:hover{
+	color: black;	
+}
+
+#arrow-right {	
+}
+
+#arrow-right:hover{
+	color: black;		 	
+}
+
+.text-view {	
+	width: 80%;
+	height: 100%;	
+	overflow: hidden;
+	display: inline-flex;	
+}
+
+.text-wrap {
+	position: relative;
+	flex-shrink: 0;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-family: 'Fjalla One', sans-serif;
+	color: #979797;	
+	font-size: 2em;	
+}
+
+.indicators {
+	display: inline-flex;
+	width: 100%;
+	height: 2em;	
+	background-color: #979797;	 
+}
+
+.indicator {	
+	width: 25%;
+	height: 100%;
+	transition: all .5s;	
+}
+
+.indicator-bg {
+	background-color: #5DB53C;
+}
+
 
 @media only screen and (max-width: 1145px) {
 	#navbar {		
@@ -332,9 +401,15 @@ body {
 	}
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (min-width: 350px) and (max-width: 415px) {
 	.info-caption h1 {		
 		font-size: 1.2em;		
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 345px) {
+	.info-caption h1 {		
+		font-size: 1em;		
 	}
 }
 

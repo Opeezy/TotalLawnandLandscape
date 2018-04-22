@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 		$(document).ready(function(){
@@ -20,7 +21,39 @@
 			   } else {
 			   		$('#navbar').addClass('navbar-trans').removeClass('navbar-full');
 			   }
-			});			   
+			});
+			function scrollLeft(id, next) {
+				$('.text-wrap').animate({
+					left: "-=100%"
+				}, 1000);
+				$(`#i-${id}`).removeClass('indicator-bg');
+				$(`#i-${next}`).addClass('indicator-bg');
+			}
+			function scrollRight(id, next) {
+				$('.text-wrap').animate({
+					left: "+=100%"
+				}, 1000);
+				$(`#i-${id}`).removeClass('indicator-bg');
+				$(`#i-${next}`).addClass('indicator-bg');
+			}
+			$('#arrow-left').click(function() {
+				if ($('#i-2').hasClass('indicator-bg')) {
+					scrollRight(2, 1);
+				} else if ($('#i-3').hasClass('indicator-bg')) {
+					scrollRight(3,2);
+				} else if ($('#i-4').hasClass('indicator-bg')) {
+					scrollRight(4,3);
+				}
+			})
+			$('#arrow-right').click(function() {
+				if ($('#i-1').hasClass('indicator-bg')) {
+					scrollLeft(1, 2);
+				} else if ($('#i-2').hasClass('indicator-bg')) {
+					scrollLeft(2,3);
+				} else if ($('#i-3').hasClass('indicator-bg')) {
+					scrollLeft(3,4);
+				}				
+			})														   
 		});		
 	</script>  
 
@@ -76,7 +109,45 @@
 	</section>
 	<div id="spacer">
 	</div>
-	<section class="testimonial">		
+	<section class="testimonial">
+		<div id="arrow-left" class="arrows">
+			<a class="fa fa-angle-left"></a>
+		</div>
+		<div class="text-view">									
+			<div class="text-wrap">
+				<p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat."</i><br><br><strong>- John Doe</strong></p>
+			</div>
+			<div class="text-wrap">
+				<p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat."</i><br><br><strong>- Sally Smith</strong></p>
+			</div>
+			<div class="text-wrap">
+				<p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat."</i><br><br><strong>- Mark Johnson</strong></p>
+			</div>				
+			<div class="text-wrap">
+				<p><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat."</i><br><br><strong>- Leslie Porter</strong></p>
+			</div>									
+		</div> 
+		<div id="arrow-right" class="arrows">
+			<a class="fa fa-angle-right"></a>
+		</div>
+	</section>
+	<section class="indicators">
+		<div id="i-1" class="indicator indicator-bg"></div>
+		<div id="i-2" class="indicator"></div>
+		<div id="i-3" class="indicator"></div>
+		<div id="i-4" class="indicator"></div>
 	</section>	
 </body>
 </html>
@@ -89,4 +160,9 @@
 <!--  <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
  -->
 
+<!-- <i><p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat."</p></i><br>
+				<strong><p>- John Doe</p></strong> -->		
  
