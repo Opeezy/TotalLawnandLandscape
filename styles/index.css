@@ -397,18 +397,28 @@ body {
 
 @media only screen and (min-width: 415px) and (max-width: 480px) {
 	.info-caption h1 {		
-		font-size: 1.4em;		
+		font-size: 1.5em;		
+	}
+	.info-caption p {		
+		font-size: 1.2em;		
 	}
 }
 
+
 @media only screen and (min-width: 345px) and (max-width: 415px) {
 	.info-caption h1 {		
-		font-size: 1.2em;		
+		font-size: 1.3em;		
+	}
+	.info-caption p {		
+		font-size: 1em;		
 	}
 }
 
 @media only screen and (min-width: 0px) and (max-width: 345px) {
 	.info-caption h1 {		
+		font-size: 1em;		
+	}
+	.info-caption p {		
 		font-size: 1em;		
 	}
 }
