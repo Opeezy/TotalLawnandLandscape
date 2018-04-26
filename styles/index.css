@@ -274,22 +274,88 @@ body {
 }
 
 .indicators {
-	display: inline-flex;
+	display: flex;
+	flex-direction: row;
 	width: 100%;
 	height: 2em;	
-	background-color: #979797;	 
+	background-color: #979797;		 
 }
 
 .indicator {	
 	width: 25%;
 	height: 100%;
-	transition: all .5s;	
+	transition: all .5s;	  
 }
 
 .indicator-bg {
 	background-color: #5DB53C;
 }
 
+.contact {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25em;
+	background-color: #313030;	
+}
+
+.contact-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	height: 100%;
+	/*border: 1px solid white;*/
+}
+
+.contact-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;	
+	list-style-type: none;
+	/*border-bottom: 1px solid white;	*/
+	padding-bottom: 20px;	
+}
+
+.contact-icon a{
+	margin-right: 40px;
+	margin-left: 40px;
+	text-decoration: none;
+	font-size: 3.5em;
+	color: white;
+}
+
+#fb:hover a{
+	color: #4267b2;
+}
+
+#email:hover a{
+	color: yellow;
+}
+
+#phone:hover a{
+	color: red;
+}
+
+.contact-wrap p{
+	color: white;
+	font-size: 1.2em;
+	margin: 20px 0 50px 0;
+}
+
+#heart {
+	color: red;
+}
+
+#opeezy {
+	text-decoration: none;
+	color: blue;
+}
 
 @media only screen and (max-width: 1145px) {
 	#navbar {		
@@ -336,177 +402,507 @@ body {
 	}
 }
 
-/*Responsivness for title bar*/
-@media only screen and (min-width: 580px) and (max-width: 720px) {
-	.caption h1 {
-		font-size: 3.5em;
+/*Tablet size*/
+@media only screen and (min-width: 805px) and (max-width: 980px) {
+	.info-caption h1 {
+		font-size: 2.9em;
 	}
-	.caption p {
-		font-size: 1.5em;
-	}
-}
 
-@media only screen and (min-width: 500px) and (max-width: 580px) {
-	.caption h1 {
-		font-size: 3.0em;
-	}
-	.caption p {
+	.info-caption p {
 		font-size: 1.3em;
 	}
-}
 
-@media only screen and (max-width: 500px) {
-	.caption h1 {
+	.serve-box h1 {
 		font-size: 2.5em;
 	}
-	.caption p {
-		font-size: 1.1em;
-	}
-}
 
-/*Responsivness for info bar*/
-@media only screen and (min-width: 850px) and (max-width: 995px) {
-	.info-caption h1 {		
-		font-size: 3em;		
+	.list-item p {
+		font-size: 1.5em;
 	}
-}
 
-@media only screen and (min-width: 750px) and (max-width: 850px) {
-	.info-caption h1 {		
-		font-size: 2.7em;		
-	}
-}
-
-@media only screen and (min-width: 650px) and (max-width: 750px) {
-	.info-caption h1 {		
-		font-size: 2.3em;		
-	}
-}
-
-@media only screen and (min-width: 570px) and (max-width: 650px) {
-	.info-caption h1 {		
-		font-size: 2.0em;		
-	}
-}
-
-@media only screen and (min-width: 480px) and (max-width: 570px) {
-	.info-caption h1 {		
-		font-size: 1.7em;		
-	}
-}
-
-@media only screen and (min-width: 415px) and (max-width: 480px) {
-	.info-caption h1 {		
-		font-size: 1.5em;		
-	}
-	.info-caption p {		
-		font-size: 1.2em;		
-	}
-}
-
-
-@media only screen and (min-width: 345px) and (max-width: 415px) {
-	.info-caption h1 {		
-		font-size: 1.3em;		
-	}
-	.info-caption p {		
-		font-size: 1em;		
-	}
-}
-
-@media only screen and (min-width: 0px) and (max-width: 345px) {
-	.info-caption h1 {		
-		font-size: 1em;		
-	}
-	.info-caption p {		
-		font-size: 1em;		
-	}
-}
-
-@media only screen and (min-width: 715px) and (max-width: 825px) {
-	.serve-box h1{		
-		font-size: 2.6em;		
-	}
-	.list-item p{		
-		font-size: 1.5em;		
-	}
-}
-
-@media only screen and (min-width: 635px) and (max-width: 715px) {
-	.serve-box h1{		
-		font-size: 2.3em;		
-	}
-	.list-item p{		
-		font-size: 1.3em;		
-	}
-}
-
-@media only screen and (min-width: 555px) and (max-width: 635px) {
-	.serve-box h1{		
-		font-size: 2.0em;		
-	}
-	.list-item p{		
-		font-size: 1.3em;		
-	}
-}
-
-@media only screen and (min-width: 475px) and (max-width: 555px) {
-	.serve-box h1{		
-		font-size: 1.7em;		
-	}
-	.list-item p{		
-		font-size: 1.0em;		
-	}
-}
-
-@media only screen and (min-width: 415px) and (max-width: 475px) {
-	.serve-box h1{		
-		font-size: 1.5em;		
-	}
-	.list-item p{		
-		font-size: .9em;		
-	}
-}
-
-@media only screen and (min-width: 0px) and (max-width: 415px) {
-	.serve-box h1{		
-		font-size: 1.3em;		
-	}
-	.list-item p{		
-		font-size: .8em;		
-	}
-}
-
-/*responsiveness for carousel*/
-@media only screen and (min-width: 790px) and (max-width: 950px) {
 	.text-wrap {
 		font-size: 1.8em;
 	}
 }
 
-@media only screen and (min-width: 660px) and (max-width: 790px) {
+@media only screen and (min-width: 730px) and (max-width: 805px) {
+	.info-caption h1 {
+		font-size: 2.6em;
+	}
+
+	.info-caption p {
+		font-size: 1.3em;
+	}
+
+	.serve-box h1 {
+		font-size: 2.4em;
+	}
+
+	.list-item p {
+		font-size: 1.4em;
+	}
+
+	.text-wrap {
+		font-size: 1.7em;
+	}
+}
+
+@media only screen and (min-width: 680px) and (max-width: 730px) {
+	.caption h1 {
+		font-size: 3.3em; 
+	}
+
+	.caption p {
+		font-size: 1.3em;
+	}
+
+	.info-caption h1 {
+		font-size: 2.4em;
+	}
+
+	.info-caption p {
+		font-size: 1.2em;
+	}
+
+	.serve-box h1 {
+		font-size: 2.3em;
+	}
+
+	.list-item p {
+		font-size: 1.3em;
+	}
+
 	.text-wrap {
 		font-size: 1.6em;
 	}
 }
 
-@media only screen and (min-width: 600px) and (max-width: 660px) {
+@media only screen and (min-width: 635px) and (max-width: 680px) {
+	.caption h1 {
+		font-size: 3.3em; 
+	}
+
+	.caption p {
+		font-size: 1.3em;
+	}
+
+	.info-caption h1 {
+		font-size: 2.2em;
+	}
+
+	.info-caption p {
+		font-size: 1.1em;
+	}
+
+	.serve-box h1 {
+		font-size: 2.2em;
+	}
+
+	.list-item p {
+		font-size: 1.2em;
+	}
+
+	.text-wrap {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (min-width: 595px) and (max-width: 635px) {
+	.caption h1 {
+		font-size: 3.2em; 
+	}
+
+	.caption p {
+		font-size: 1.2em;
+	}
+
+	.info-caption h1 {
+		font-size: 2.1em;
+	}
+
+	.info-caption p {
+		font-size: 1.1em;
+	}
+
+	.serve-box h1 {
+		font-size: 2.1em;
+	}
+
+	.list-item p {
+		font-size: 1.1em;
+	}
+
 	.text-wrap {
 		font-size: 1.4em;
 	}
 }
 
-@media only screen and (min-width: 510px) and (max-width: 600px) {
+@media only screen and (min-width: 545px) and (max-width: 595px) {
+	.caption h1 {
+		font-size: 3.2em; 
+	}
+
+	.caption p {
+		font-size: 1.2em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.9em;
+	}
+
+	.info-caption p {
+		font-size: 1em;
+	}
+
+	.serve-box h1 {
+		font-size: 2em;
+	}
+
+	.list-item p {
+		font-size: 1em;
+	}
+
+	.text-wrap {
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (min-width: 485px) and (max-width: 545px) {
+	.caption h1 {
+		font-size: 2.9em; 
+	}
+
+	.caption p {
+		font-size: 1.2em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.7em;
+	}
+
+	.info-caption p {
+		font-size: 1em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.7em;
+	}
+
+	.list-item p {
+		font-size: 1em;
+	}
+
 	.text-wrap {
 		font-size: 1.2em;
 	}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 510px) {
+@media only screen and (min-width: 460px) and (max-width: 485px) {
+	.caption h1 {
+		font-size: 2.8em; 
+	}
+
+	.caption p {
+		font-size: 1.2em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.5em;
+	}
+
+	.info-caption p {
+		font-size: 1em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.6em;
+	}
+
+	.list-item p {
+		font-size: 1em;
+	}
+
+	.text-wrap {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 445px) and (max-width: 460px) {
+	.caption h1 {
+		font-size: 2.6em; 
+	}
+
+	.caption p {
+		font-size: 1.1em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.5em;
+	}
+
+	.info-caption p {
+		font-size: 1em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.6em;
+	}
+
+	.list-item p {
+		font-size: 1em;
+	}
+
+	.text-wrap {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 445px) {
+	.caption h1 {
+		font-size: 2.6em; 
+	}
+
+	.caption p {
+		font-size: 1.1em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.4em;
+	}
+
+	.info-caption p {
+		font-size: .9em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.45em;
+	}
+
+	.list-item p {
+		font-size: .9em;
+	}
+
+	.text-wrap {
+		font-size: 1.1em;
+	}
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 425px) {
+	.caption h1 {
+		font-size: 2.4em; 
+	}
+
+	.caption p {
+		font-size: 1em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.4em;
+	}
+
+	.info-caption p {
+		font-size: .9em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.45em;
+	}
+
+	.list-item p {
+		font-size: .9em;
+	}
+
+	.text-wrap {
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (min-width: 390px) and (max-width: 400px) {
+	.caption h1 {
+		font-size: 2.2em; 
+	}
+
+	.caption p {
+		font-size: 1em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.3em;
+	}
+
+	.info-caption p {
+		font-size: .9em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.3em;
+	}
+
+	.list-item p {
+		font-size: .7em;
+	}
+
 	.text-wrap {
 		font-size: 1em;
 	}
 }
+
+@media only screen and (min-width: 370px) and (max-width: 390px) {
+	.caption h1 {
+		font-size: 2.2em; 
+	}
+
+	.caption p {
+		font-size: 1em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.3em;
+	}
+
+	.info-caption p {
+		font-size: .9em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.3em;
+	}
+
+	.list-item p {
+		font-size: .7em;
+	}
+
+	.text-wrap {
+		font-size: 1em;
+	}
+
+	.contact-icon a{
+		margin-right: 35px;
+		margin-left: 35px;	
+	}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 370px) {
+	.caption h1 {
+		font-size: 2.1em; 
+	}
+
+	.caption p {
+		font-size: .9em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.2em;
+	}
+
+	.info-caption p {
+		font-size: .9em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.2em;
+	}
+
+	.list-item p {
+		font-size: .7em;
+	}
+
+	.text-wrap {
+		font-size: 1em;
+	}
+
+	.contact-icon a{
+		margin-right: 35px;
+		margin-left: 35px;	
+	}
+}
+
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+	.caption h1 {
+		font-size: 2em; 
+	}
+
+	.caption p {
+		font-size: .9em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.1em;
+	}
+
+	.info-caption p {
+		font-size: .8em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.1em;
+	}
+
+	.list-item p {
+		font-size: .6em;
+	}
+
+	.text-wrap {
+		font-size: .9em;
+	}
+
+	.contact-icon a{
+		margin-right: 30px;
+		margin-left: 30px;	
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+	.caption h1 {
+		font-size: 1.85em; 
+	}
+
+	.caption p {
+		font-size: .85em;
+	}
+
+	.info-caption h1 {
+		font-size: 1em;
+	}
+
+	.info-caption p {
+		font-size: .75em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.05em;
+	}
+
+	.list-item p {
+		font-size: .55em;
+	}
+
+	.text-wrap {
+		font-size: .9em;
+	}
+
+	.contact-icon a{
+		margin-right: 25px;
+		margin-left: 25px;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
