@@ -1,6 +1,7 @@
 body {
 	margin:0;
-	background-image: url('http://www.gleannlochlandscaping.com/wp-content/themes/land2/images/sliders/01.jpg');
+	/*background-image: url('http://www.gleannlochlandscaping.com/wp-content/themes/land2/images/sliders/01.jpg');*/
+	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -437,6 +438,7 @@ body {
 	}
 
 	.drop-links {
+		font-family: 'Fjalla One', sans-serif;
 		opacity: 0;
 		display: flex;
 		justify-content: flex-start;
