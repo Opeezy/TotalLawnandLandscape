@@ -16,7 +16,7 @@
 		   		})
 		   // alert($('html').scrollTop())
 		   $(window).scroll(function() {		   		
-		   		 if ($('html').scrollTop() >= 80) {
+		   		 if ($('html').scrollTop() > 0) {
 			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
 			   } else {
 			   		$('#navbar').addClass('navbar-trans').removeClass('navbar-full');
@@ -53,6 +53,25 @@
 				} else if ($('#i-3').hasClass('indicator-bg')) {
 					scrollLeft(3,4);
 				}				
+			})
+			$('#drop-down').click(function() {
+				if ($('#nav-drop').hasClass('nav-drop-invis')) {
+					$('#nav-drop').removeClass('nav-drop-invis');
+					$('#nav-drop').addClass('nav-drop');
+					$('#nav-drop').animate({
+						height: "15em"						
+					}, 600);
+					$('#nav-drop > a').removeClass('drop-links-invis');
+					$('#nav-drop > a').addClass('drop-links');
+					$('#nav-drop > a').fadeTo(500, 1);					
+				} else {
+					$('#nav-drop > a').fadeTo(500, 0);
+					$('#nav-drop > a').removeClass('drop-links');
+					$('#nav-drop > a').addClass('drop-links-invis');										
+					$('#nav-drop').removeClass('nav-drop');
+					$('#nav-drop').addClass('nav-drop-invis');
+					$('#nav-drop').height(0);					
+				}
 			})														   
 		});		
 	</script>  
@@ -62,7 +81,7 @@
 </head>
 <body>	
 	<nav id="navbar" class="navbar-trans">
-		<div class="drop-down">
+		<div id="drop-down" class="drop-down">
 			<div class="bar"></div>
 			<div class="bar"></div>
 			<div class="bar"></div>
@@ -71,6 +90,11 @@
 		<a class="nav-links" href=""><p>Landscaping</p></a>
 		<a class="nav-links" href=""><p>Home Renovation</p></a>			
 	</nav>
+	<nav id="nav-drop" class="nav-drop-invis">
+		<a class="drop-links-invis"><p>Fence Design</p></a>
+		<a class="drop-links-invis"><p>Landscaping</p></a>
+		<a class="drop-links-invis"><p>Home Renovation</p></a>	
+	</nav>	
 	<section class="title">		
 		<div class="caption">
 			<div class="head">
