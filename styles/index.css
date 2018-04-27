@@ -22,10 +22,12 @@ body {
 
 .nav-drop-invis{
 	display: none;
+	height: 0;
 }
 
 .drop-links-invis{
 	display: none;
+	height: 0;
 }
 
 .navbar-full {	
