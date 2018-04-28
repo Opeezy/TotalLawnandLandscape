@@ -1,0 +1,376 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#navbar {	
+	margin: 0;	
+	width: 100%;
+	height: 5em;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	transition: all .5s;
+}
+
+.nav-drop-invis{
+	display: none;
+	height: 0;
+}
+
+.drop-links-invis{
+	display: none;
+	height: 0;
+}
+
+.navbar-full {	
+	background: #313030;
+	z-index: 1;	
+}
+
+.navbar-trans {
+	background: #313030;
+	opacity: .8;
+}
+
+.nav-links {
+	white-space: nowrap; 	
+	font-family: 'Fjalla One', sans-serif;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	width: 15%;
+	height: 100%;	
+}
+
+.nav-links:hover {
+	background-color: #B6B6B6; 
+	color: #141414;
+}
+
+.nav-links p {
+	font-size: 1.7em;
+	transition: all .5s;
+	margin: 0;
+}
+
+.homes {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	text-align: center;	
+	width: 100%;
+	height: 35em;	
+	color: white;
+	background-color: rgba(182, 182, 182, .3);
+}
+
+.homes h1 {	
+	white-space: nowrap;
+	font-family: 'Fjalla One', sans-serif;
+	margin: 0;		
+	font-size: 4.2em;
+	z-index: 0		
+}
+
+.home-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 70em;
+	background: white;
+}
+
+#top-divider {
+	background-color: #DCDCDC;
+	width: 100%;
+	height: 2em;
+	margin-bottom: 20px;
+}
+
+.images {
+	display: flex;
+	flex-direction: row;	
+	width: 100%;
+	height: 25%;
+	margin-bottom: 100px;	
+}
+
+.image-overflow {	
+	width: 25%;	
+	height: 100%;	
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 20px 0 20px;
+}
+
+.image-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+	height: 100%;	
+	border-radius: 50%;
+	overflow: hidden;
+	transition: all .3s;
+	cursor: pointer;	
+}
+
+.image-container:after {	
+	content: "";
+	background-color: rgb(132, 132, 132);
+	opacity: 0; 
+	position: absolute;
+	width: 100%;	
+	height: 100%;
+	top: 0;
+	left: 0;	
+	border-radius: 50%;
+	overflow: hidden;
+	transition: all .3s;	
+}
+
+.image-container h1 {
+	opacity: 0;
+	white-space: nowrap;
+	font-family: 'Fjalla One', sans-serif;
+	margin: 0;		
+	font-size: 1.9em;
+	color: white;
+	transition: all .3s;
+	z-index: 1;		
+}
+
+.image-container:hover {
+	transform: scale(1.1);		
+}
+
+.image-container:hover h1{
+	opacity: 1;		
+}
+
+.image-container:hover:after {
+	opacity: .4;
+}
+
+#img1 {
+	background: url("../images/home/byhuyen-406544-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;	
+}
+
+#img2 {
+	background-image: url("../images/home/joshua-ness-109299-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#img3 {
+	background-image: url("../images/home/naomi-hebert-188443-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#img4 {
+	background-image: url("../images/home/nick-karvounis-592488-unsplash.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#homes-title {
+	white-space: nowrap;
+	font-family: 'Fjalla One', sans-serif;
+	margin: 0;		
+	font-size: 3.5em;
+	color: #979797;
+	margin-bottom: 20px;	
+}
+
+#title-divider {
+	width: 50%;
+	height: .5em;
+	background-color: #DCDCDC;
+	border-radius: 15px;	
+}
+
+#homes-description {	
+	font-family: 'Fjalla One', sans-serif;	
+	padding: 0 25% 0 25%;		
+	font-size: 1.7em;
+	line-height: 2.3em;
+	color: #979797;
+}
+
+.contact {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25em;
+	background-color: #313030;	
+}
+
+.contact-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	height: 100%;
+	/*border: 1px solid white;*/
+}
+
+.contact-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;	
+	list-style-type: none;
+	/*border-bottom: 1px solid white;	*/
+	padding-bottom: 20px;	
+}
+
+.contact-icon a{
+	margin-right: 40px;
+	margin-left: 40px;
+	text-decoration: none;
+	font-size: 3.5em;
+	color: white;
+}
+
+#fb:hover a{
+	color: #4267b2;
+}
+
+#email:hover a{
+	color: yellow;
+}
+
+#phone:hover a{
+	color: red;
+}
+
+.contact-wrap p{
+	color: white;
+	font-size: 1.2em;
+	margin: 20px 0 50px 0;
+}
+
+#heart {
+	color: red;
+}
+
+#opeezy {
+	text-decoration: none;
+	color: blue;
+}	
+
+@media only screen and (max-width: 1145px) {
+	#navbar {		
+		width: 100%;
+		height: 5em;
+		margin: 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.drop-down {		
+		margin: 0 15px 0 0;
+	    padding: 0 8px 0 8px;	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		border: 3px solid white;
+		border-radius: 10px;
+		transition: all .5s;
+		cursor: pointer;
+	}
+
+	.drop-down:hover {
+		background-color: #B6B6B6; 	
+	}
+
+	.drop-down:hover .bar {
+		background-color: #141414 
+	}
+
+	.bar {	
+		border-radius: 10px;	
+		width: 100%;
+		height: 10%;
+		background-color: white;
+	}
+
+	.nav-drop-invis{
+		height: 0;
+		display: none;				
+	}
+
+	.drop-links-invis {
+		height: 0;
+		display: none;		
+	}
+
+	.nav-drop {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 0;
+		margin: 0;
+		position: fixed;
+		top: 5em;
+		background: rgba(49, 48, 48, .8);
+		z-index: 1;
+		border-top: 1px solid white;		
+	}
+
+	.drop-links {
+		font-family: 'Fjalla One', sans-serif;
+		opacity: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		color: white;
+		width: 100%;
+		height: 33.33%;
+		font-size: 1.7em;
+		text-decoration: none;
+		padding-left: 10px;
+		cursor: pointer;
+		transition: all .5s;
+	}
+
+	.drop-links:hover {
+		background: rgba(182, 182, 182, .8);
+		color: #141414;
+	}
+}

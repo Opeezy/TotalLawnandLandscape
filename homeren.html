@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="styles/homeren.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script>
+		$(document).ready(function(){		  
+		   $(window).scroll(function() {		   		
+		   		 if ($('html').scrollTop() > 0) {
+			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
+			   } else {
+			   		$('#navbar').addClass('navbar-trans').removeClass('navbar-full');
+			   }
+			});			
+			$('#drop-down').click(function() {
+				if ($('#nav-drop').hasClass('nav-drop-invis')) {
+					$('#nav-drop').removeClass('nav-drop-invis');
+					$('#nav-drop').addClass('nav-drop');
+					$('#nav-drop').animate({
+						height: "15em"						
+					}, 600, function() {
+						$('#nav-drop > a').removeClass('drop-links-invis');
+						$('#nav-drop > a').addClass('drop-links');
+						$('#nav-drop > a').fadeTo(100, 1);	
+					});
+					// $('#nav-drop > a').removeClass('drop-links-invis');
+					// $('#nav-drop > a').addClass('drop-links');
+					// $('#nav-drop > a').fadeTo(300, 1);					
+				} else {
+					$('#nav-drop > a').fadeTo(300, 0);
+					$('#nav-drop > a').removeClass('drop-links');
+					$('#nav-drop > a').addClass('drop-links-invis');
+					$('#nav-drop').animate({
+						height: "0em"						
+					}, 600, function() {																
+						$('#nav-drop').removeClass('nav-drop');
+						$('#nav-drop').addClass('nav-drop-invis');
+					});
+					// $('#nav-drop > a').removeClass('drop-links');
+					// $('#nav-drop > a').addClass('drop-links-invis');										
+					// $('#nav-drop').removeClass('nav-drop');
+					// $('#nav-drop').addClass('nav-drop-invis');
+					// $('#nav-drop').height(0);					
+				}
+			})
+			$(window).resize(function() {
+				if ($(window).width() >= 1145) {
+					$('#nav-drop').removeClass('nav-drop');
+					$('#nav-drop').addClass('nav-drop-invis');
+					$('#nav-drop > a').removeClass('drop-links');
+					$('#nav-drop > a').addClass('drop-links-invis');
+					$('#nav-drop').height(0);
+				}
+			})														   
+		});		
+	</script>  
+
+	<title>About</title>
+</head>
+<body>
+	<nav id="navbar" class="navbar-trans">
+		<div id="drop-down" class="drop-down">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+		<a class="nav-links" href=""><p>Fence Design</p></a>
+		<a class="nav-links" href=""><p>Landscaping</p></a>
+		<a class="nav-links" href="homeren.html"><p>Home Renovation</p></a>			
+	</nav>
+	<nav id="nav-drop" class="nav-drop-invis">
+		<a class="drop-links-invis"><p>Fence Design</p></a>
+		<a class="drop-links-invis"><p>Landscaping</p></a>
+		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>	
+	</nav>
+	<section class="homes">
+		<h1>Home Renovation</h1>			
+	</section>
+	<section class="home-info">
+		<div id="top-divider"></div>
+		<div class="images">
+			<div class="image-overflow">
+				<div id="img1" class="image-container"><h1>Caption</h1></div>
+			</div>
+			<div class="image-overflow">
+				<div id="img2" class="image-container"><h1>Caption</h1></div>
+			</div>
+			<div class="image-overflow">
+				<div id="img3" class="image-container"><h1>Caption</h1></div>
+			</div>
+			<div class="image-overflow">
+				<div id="img4" class="image-container"><h1>Caption</h1></div>
+			</div>
+		</div>
+		<h1 id="homes-title">No Place Like Home</h1>
+		<div id="title-divider">
+		</div>
+		<p id="homes-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>		
+	</section>
+	<footer class="contact">
+		<div class="contact-wrap">
+			<ul class="contact-icons">
+				<li id="fb" class="contact-icon"><a href=""><i class="fa fa-facebook-square"></i></a></li>
+				<li  id="email" class="contact-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
+				<li id="phone" class="contact-icon"><a href=""><i class="fa fa-phone"></i></a></li>
+			</ul>
+			<p>Made with <i id="heart" class="fa fa-heart-o"></i> by <a id="opeezy" href="https://github.com/Opeezy">@Opeezy</a></p>			
+		</div>
+	</footer>
+</body>
+</html>
