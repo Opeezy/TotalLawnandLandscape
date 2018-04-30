@@ -3,8 +3,8 @@ body {
 	/*background-image: url('http://www.gleannlochlandscaping.com/wp-content/themes/land2/images/sliders/01.jpg');*/
 	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	background-size: fixed;
+	background-position: 50% 40%;
 	background-attachment: fixed;	
 }
 
@@ -461,433 +461,18 @@ body {
 	}
 }
 
-/*Tablet size*/
-@media only screen and (min-width: 805px) and (max-width: 980px) {
-	.info-caption h1 {
-		font-size: 2.9em;
-	}
-
-	.info-caption p {
-		font-size: 1.3em;
-	}
-
-	.serve-box h1 {
-		font-size: 2.5em;
-	}
-
-	.list-item p {
-		font-size: 1.5em;
-	}
-
-	.text-wrap {
-		font-size: 1.8em;
-	}
-}
-
-@media only screen and (min-width: 730px) and (max-width: 805px) {
-	.info-caption h1 {
-		font-size: 2.6em;
-	}
-
-	.info-caption p {
-		font-size: 1.3em;
-	}
-
-	.serve-box h1 {
-		font-size: 2.4em;
-	}
-
-	.list-item p {
-		font-size: 1.4em;
-	}
-
-	.text-wrap {
-		font-size: 1.7em;
-	}
-}
-
-@media only screen and (min-width: 680px) and (max-width: 730px) {
-	.caption h1 {
-		font-size: 3.3em; 
-	}
-
-	.caption p {
-		font-size: 1.3em;
-	}
-
-	.info-caption h1 {
-		font-size: 2.4em;
-	}
-
-	.info-caption p {
-		font-size: 1.2em;
-	}
-
-	.serve-box h1 {
-		font-size: 2.3em;
-	}
-
-	.list-item p {
-		font-size: 1.3em;
-	}
-
-	.text-wrap {
-		font-size: 1.6em;
-	}
-}
-
-@media only screen and (min-width: 635px) and (max-width: 680px) {
-	.caption h1 {
-		font-size: 3.3em; 
-	}
-
-	.caption p {
-		font-size: 1.3em;
-	}
-
-	.info-caption h1 {
-		font-size: 2.2em;
-	}
-
-	.info-caption p {
-		font-size: 1.1em;
-	}
-
-	.serve-box h1 {
-		font-size: 2.2em;
-	}
-
-	.list-item p {
-		font-size: 1.2em;
-	}
-
-	.text-wrap {
-		font-size: 1.5em;
-	}
-}
-
-@media only screen and (min-width: 595px) and (max-width: 635px) {
-	.caption h1 {
-		font-size: 3.2em; 
-	}
-
-	.caption p {
-		font-size: 1.2em;
-	}
-
-	.info-caption h1 {
-		font-size: 2.1em;
-	}
-
-	.info-caption p {
-		font-size: 1.1em;
-	}
-
-	.serve-box h1 {
-		font-size: 2.1em;
-	}
-
-	.list-item p {
-		font-size: 1.1em;
-	}
-
-	.text-wrap {
-		font-size: 1.4em;
-	}
-}
-
-@media only screen and (min-width: 545px) and (max-width: 595px) {
-	.caption h1 {
-		font-size: 3.2em; 
-	}
-
-	.caption p {
-		font-size: 1.2em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.9em;
-	}
-
-	.info-caption p {
-		font-size: 1em;
-	}
-
-	.serve-box h1 {
-		font-size: 2em;
-	}
-
-	.list-item p {
-		font-size: 1em;
-	}
-
-	.text-wrap {
-		font-size: 1.3em;
-	}
-}
-
-@media only screen and (min-width: 485px) and (max-width: 545px) {
-	.caption h1 {
-		font-size: 2.9em; 
-	}
-
-	.caption p {
-		font-size: 1.2em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.7em;
-	}
-
-	.info-caption p {
-		font-size: 1em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.7em;
-	}
-
-	.list-item p {
-		font-size: 1em;
-	}
-
-	.text-wrap {
-		font-size: 1.2em;
-	}
-}
-
-@media only screen and (min-width: 460px) and (max-width: 485px) {
-	.caption h1 {
-		font-size: 2.8em; 
-	}
-
-	.caption p {
-		font-size: 1.2em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.5em;
-	}
-
-	.info-caption p {
-		font-size: 1em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.6em;
-	}
-
-	.list-item p {
-		font-size: 1em;
-	}
-
-	.text-wrap {
-		font-size: 1.1em;
-	}
-}
-
-@media only screen and (min-width: 445px) and (max-width: 460px) {
-	.caption h1 {
-		font-size: 2.6em; 
-	}
-
-	.caption p {
-		font-size: 1.1em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.5em;
-	}
-
-	.info-caption p {
-		font-size: 1em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.6em;
-	}
-
-	.list-item p {
-		font-size: 1em;
-	}
-
-	.text-wrap {
-		font-size: 1.1em;
-	}
-}
-
-@media only screen and (min-width: 425px) and (max-width: 445px) {
-	.caption h1 {
-		font-size: 2.6em; 
-	}
-
-	.caption p {
-		font-size: 1.1em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.4em;
-	}
-
-	.info-caption p {
-		font-size: .9em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.45em;
-	}
-
-	.list-item p {
-		font-size: .9em;
-	}
-
-	.text-wrap {
-		font-size: 1.1em;
-	}
-}
-
 
-@media only screen and (min-width: 400px) and (max-width: 425px) {
-	.caption h1 {
-		font-size: 2.4em; 
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+	.caption h1 {		
+		font-size: 1.9em;			
 	}
 
-	.caption p {
+	.caption p {		
 		font-size: 1em;
 	}
 
 	.info-caption h1 {
-		font-size: 1.4em;
-	}
-
-	.info-caption p {
-		font-size: .9em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.45em;
-	}
-
-	.list-item p {
-		font-size: .9em;
-	}
-
-	.text-wrap {
-		font-size: 1.1em;
-	}
-}
-
-@media only screen and (min-width: 390px) and (max-width: 400px) {
-	.caption h1 {
-		font-size: 2.2em; 
-	}
-
-	.caption p {
-		font-size: 1em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.3em;
-	}
-
-	.info-caption p {
-		font-size: .9em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.3em;
-	}
-
-	.list-item p {
-		font-size: .7em;
-	}
-
-	.text-wrap {
-		font-size: 1em;
-	}
-}
-
-@media only screen and (min-width: 370px) and (max-width: 390px) {
-	.caption h1 {
-		font-size: 2.2em; 
-	}
-
-	.caption p {
-		font-size: 1em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.3em;
-	}
-
-	.info-caption p {
-		font-size: .9em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.3em;
-	}
-
-	.list-item p {
-		font-size: .7em;
-	}
-
-	.text-wrap {
-		font-size: 1em;
-	}
-
-	.contact-icon a{
-		margin-right: 35px;
-		margin-left: 35px;	
-	}
-}
-
-@media only screen and (min-width: 360px) and (max-width: 370px) {
-	.caption h1 {
-		font-size: 2.1em; 
-	}
-
-	.caption p {
-		font-size: .9em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.2em;
-	}
-
-	.info-caption p {
-		font-size: .9em;
-	}
-
-	.serve-box h1 {
-		font-size: 1.2em;
-	}
-
-	.list-item p {
-		font-size: .7em;
-	}
-
-	.text-wrap {
-		font-size: 1em;
-	}
-
-	.contact-icon a{
-		margin-right: 35px;
-		margin-left: 35px;	
-	}
-}
-
-@media only screen and (min-width: 330px) and (max-width: 360px) {
-	.caption h1 {
-		font-size: 2em; 
-	}
-
-	.caption p {
-		font-size: .9em;
-	}
-
-	.info-caption h1 {
-		font-size: 1.1em;
+		font-size: 1.05em;
 	}
 
 	.info-caption p {
@@ -899,7 +484,42 @@ body {
 	}
 
 	.list-item p {
-		font-size: .6em;
+		font-size: .65em;
+	}
+
+	.text-wrap {
+		font-size: .7em;
+	}
+
+	.contact-icon a{
+		margin-right: 25px;
+		margin-left: 25px;		
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 465px) {
+	.caption h1 {		
+		font-size: 2.25em;			
+	}
+
+	.caption p {		
+		font-size: 1.2em;
+	}
+
+	.info-caption h1 {
+		font-size: 1.3em;
+	}
+
+	.info-caption p {
+		font-size: 1.05em;
+	}
+
+	.serve-box h1 {
+		font-size: 1.3em;
+	}
+
+	.list-item p {
+		font-size: .78em;
 	}
 
 	.text-wrap {
@@ -908,62 +528,184 @@ body {
 
 	.contact-icon a{
 		margin-right: 30px;
-		margin-left: 30px;	
+		margin-left: 30px;		
 	}
 }
 
-@media only screen and (min-width: 0px) and (max-width: 330px) {
-	.caption h1 {
-		font-size: 1.85em; 
+@media only screen and (min-width: 465px) and (max-width: 580px) {
+	.caption h1 {		
+		font-size: 2.7em;			
 	}
 
-	.caption p {
-		font-size: .85em;
+	.caption p {		
+		font-size: 1.4em;
 	}
 
 	.info-caption h1 {
-		font-size: 1em;
+		font-size: 1.55em;
 	}
 
 	.info-caption p {
-		font-size: .75em;
+		font-size: 1.2em;
 	}
 
 	.serve-box h1 {
-		font-size: 1.05em;
+		font-size: 1.6em;
 	}
 
 	.list-item p {
-		font-size: .55em;
+		font-size: .95em;
 	}
 
 	.text-wrap {
-		font-size: .9em;
+		font-size: 1.1em;
 	}
 
 	.contact-icon a{
-		margin-right: 25px;
-		margin-left: 25px;	
+		margin-right: 35px;
+		margin-left: 35px;		
 	}
 }
 
+@media only screen and (min-width: 580px) and (max-width: 730px) {
+	.caption h1 {		
+		font-size: 3.4em;			
+	}
 
+	.caption p {		
+		font-size: 1.7em;
+	}
 
+	.info-caption h1 {
+		font-size: 2em;
+	}
 
+	.info-caption p {
+		font-size: 1.5em;
+	}
 
+	.serve-box h1 {
+		font-size: 2em;
+	}
 
+	.list-item p {
+		font-size: 1.2em;
+	}
 
+	.text-wrap {
+		font-size: 1.2em;
+	}
 
+	.contact-icon a{
+		margin-right: 40px;
+		margin-left: 40px;		
+	}
+}
 
+@media only screen and (min-width: 730px) and (max-width: 900px) {
+	.caption h1 {		
+		font-size: 4.2em;			
+	}
 
+	.caption p {		
+		font-size: 1.7em;
+	}
 
+	.info-caption h1 {
+		font-size: 2.5em;
+	}
 
+	.info-caption p {
+		font-size: 1.5em;
+	}
 
+	.serve-box h1 {
+		font-size: 2.5em;
+	}
 
+	.list-item p {
+		font-size: 1.5em;
+	}
 
+	.text-wrap {
+		font-size: 1.5em;
+	}
 
+	.contact-icon a{
+		margin-right: 40px;
+		margin-left: 40px;		
+	}
+}
 
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+	.caption h1 {		
+		font-size: 4.2em;			
+	}
 
+	.caption p {		
+		font-size: 1.7em;
+	}
+
+	.info-caption h1 {
+		font-size: 3em;
+	}
+
+	.info-caption p {
+		font-size: 1.5em;
+	}
+
+	.serve-box h1 {
+		font-size: 3em;
+	}
+
+	.list-item p {
+		font-size: 2em;
+	}
+
+	.text-wrap {
+		font-size: 1.8em;
+	}
+
+	.contact-icon a{
+		margin-right: 40px;
+		margin-left: 40px;		
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1000px) {
+	.caption h1 {		
+		font-size: 4.2em;			
+	}
+
+	.caption p {		
+		font-size: 1.7em;
+	}
+
+	.info-caption h1 {
+		font-size: 3.5em;
+	}
+
+	.info-caption p {
+		font-size: 1.5em;
+	}
+
+	.serve-box h1 {
+		font-size: 3em;
+	}
+
+	.list-item p {
+		font-size: 2em;
+	}
+
+	.text-wrap {
+		font-size: 2em;
+	}
+
+	.contact-icon a{
+		margin-right: 40px;
+		margin-left: 40px;		
+	}
+}
 
 
 
