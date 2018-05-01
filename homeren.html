@@ -26,10 +26,7 @@
 						$('#nav-drop > a').removeClass('drop-links-invis');
 						$('#nav-drop > a').addClass('drop-links');
 						$('#nav-drop > a').fadeTo(100, 1);	
-					});
-					// $('#nav-drop > a').removeClass('drop-links-invis');
-					// $('#nav-drop > a').addClass('drop-links');
-					// $('#nav-drop > a').fadeTo(300, 1);					
+					});								
 				} else {
 					$('#nav-drop > a').fadeTo(300, 0);
 					$('#nav-drop > a').removeClass('drop-links');
@@ -39,12 +36,7 @@
 					}, 600, function() {																
 						$('#nav-drop').removeClass('nav-drop');
 						$('#nav-drop').addClass('nav-drop-invis');
-					});
-					// $('#nav-drop > a').removeClass('drop-links');
-					// $('#nav-drop > a').addClass('drop-links-invis');										
-					// $('#nav-drop').removeClass('nav-drop');
-					// $('#nav-drop').addClass('nav-drop-invis');
-					// $('#nav-drop').height(0);					
+					});										
 				}
 			})
 			$(window).resize(function() {
@@ -55,11 +47,43 @@
 					$('#nav-drop > a').addClass('drop-links-invis');
 					$('#nav-drop').height(0);
 				}
-			})														   
+			})
+			function displayZoomedImage(imgClass) {
+				if ($('#zoom').hasClass('zoomed-bg-invis')) {
+					$('#zoom').removeClass('zoomed-bg-invis');
+					$('#zoom').addClass('zoomed-bg');
+					$('.zoomed-image').addClass(imgClass);
+				}
+			}			
+			$('#img1').click(function() {
+				displayZoomedImage('zoomed-image-img1');
+			});	
+			$('#img2').click(function() {
+				displayZoomedImage('zoomed-image-img2');
+			});	
+			$('#img3').click(function() {
+				displayZoomedImage('zoomed-image-img3');
+			});	
+			$('#img4').click(function() {
+				displayZoomedImage('zoomed-image-img4');
+			});	
+			$('#zoomed-exit').click(function() {
+				$('#zoom').removeClass('zoomed-bg');
+				$('#zoom').addClass('zoomed-bg-invis');
+				if ($('.zoomed-image').hasClass('zoomed-image-img1')) {
+					$('.zoomed-image').removeClass('zoomed-image-img1');
+				} else if ($('.zoomed-image').hasClass('zoomed-image-img2')) {
+					$('.zoomed-image').removeClass('zoomed-image-img2');
+				} else if ($('.zoomed-image').hasClass('zoomed-image-img3')) {
+					$('.zoomed-image').removeClass('zoomed-image-img3');
+				} else {
+					$('.zoomed-image').removeClass('zoomed-image-img4');
+				}
+			})													   
 		});		
 	</script>  
 
-	<title>About</title>
+	<title>Home Renovation</title>
 </head>
 <body>
 	<nav id="navbar" class="navbar-trans">
@@ -80,8 +104,8 @@
 	<section class="homes">
 		<h1>Home Renovation</h1>			
 	</section>
-	<section class="home-info">
-		<div id="top-divider"></div>
+	<div id="top-divider"></div>
+	<section class="home-info">		
 		<div class="images">
 			<div class="image-overflow">
 				<div id="img1" class="image-container"><h1>Caption</h1></div>
@@ -94,18 +118,47 @@
 			</div>
 			<div class="image-overflow">
 				<div id="img4" class="image-container"><h1>Caption</h1></div>
+			</div>			
+		</div>
+		<div class="homes-text">
+			<div class="description">
+				<div class="header">
+					<h1>No Place Like Home</h1>
+				</div>
+				<div class="text">					
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+			<div class="list">
+				<div class="header">
+					<h1>Services</h1>
+				</div>
+				<div class="text">					
+					<ul>
+						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
+						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
+						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
+						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
+						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<div id="zoom" class="zoomed-bg-invis">
+		<i id="zoomed-exit" class="fa fa-close"></i>
+		<div class="zoomed-image">
+			<div class="zoomed-text">
+				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 		</div>
-		<h1 id="homes-title">No Place Like Home</h1>
-		<div id="title-divider">
-		</div>
-		<p id="homes-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>		
-	</section>
+	</div>	
 	<footer class="contact">
 		<div class="contact-wrap">
 			<ul class="contact-icons">

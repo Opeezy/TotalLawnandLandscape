@@ -1,11 +1,102 @@
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: fixed;	
+}
+
+.zoomed-bg-invis {
+	display: none;
+}
+
+.zoomed-bg {	
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(39, 38, 38, .95);
+	z-index: 2;	
+}
+
+.zoomed-bg i {	
+	position: absolute;
+	top: 1%;
+	left: 1%;	
+	font-size: 3em;
+	color: white;
+	cursor: pointer;
+	transition: all .5s;
+	transition-timing-function: ease-in-out;
+}
+
+.zoomed-bg i:hover {
+	transform: rotate(360deg);
+	color: #BCBCBC;
+}
+
+.zoomed-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 70%;
+	height: 70%;
+	position: fixed;
+	top: 15%;
+	left: 15%;	
+	border-radius: 50px;
+	box-shadow: 0 0 50px white;
+}
+
+.zoomed-image-img1 {
+	background: url("../images/home/byhuyen-406544-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.zoomed-image-img2 {
+	background-image: url("../images/home/joshua-ness-109299-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.zoomed-image-img3 {
+	background-image: url("../images/home/naomi-hebert-188443-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.zoomed-image-img4 {
+	background-image: url("../images/home/nick-karvounis-592488-unsplash.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.zoomed-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25%;	
+	background-color: rgba(39, 38, 38, .75);
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	color: white;
+	font-size: 1.5em;
+	opacity: 0;
+	transition: all .5s;
+}
+
+.zoomed-image:hover .zoomed-text {
+	opacity: 1;
 }
 
 #navbar {	
@@ -94,8 +185,7 @@ body {
 #top-divider {
 	background-color: #DCDCDC;
 	width: 100%;
-	height: 2em;
-	margin-bottom: 20px;
+	height: 2em;	
 }
 
 .images {
@@ -103,7 +193,7 @@ body {
 	flex-direction: row;	
 	width: 100%;
 	height: 25%;
-	margin-bottom: 100px;	
+	margin: 35px 0 0 0;	
 }
 
 .image-overflow {	
@@ -194,30 +284,6 @@ body {
 	background-repeat: no-repeat;
 }
 
-#homes-title {
-	white-space: nowrap;
-	font-family: 'Fjalla One', sans-serif;
-	margin: 0;		
-	font-size: 3.5em;
-	color: #979797;
-	margin-bottom: 20px;	
-}
-
-#title-divider {
-	width: 50%;
-	height: .5em;
-	background-color: #DCDCDC;
-	border-radius: 15px;	
-}
-
-#homes-description {	
-	font-family: 'Fjalla One', sans-serif;	
-	padding: 0 25% 0 25%;		
-	font-size: 1.7em;
-	line-height: 2.3em;
-	color: #979797;
-}
-
 .contact {	
 	display: flex;
 	justify-content: center;
@@ -227,13 +293,107 @@ body {
 	background-color: #313030;	
 }
 
+.homes-text,.description,.header,.text {
+/*	border: 1px solid black;*/
+}
+
+.homes-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75%;	
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	color: #979797;	
+	font-family: 'Fjalla One', sans-serif;	
+	
+}
+
+.header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;	
+	width: 100%;
+	height: 30%;
+}
+
+.text {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;	
+	width: 100%;
+	height: 70%;
+}
+
+.description h1 {
+	margin: 0;
+	padding-left: 25%;	
+	font-size: 3em;	
+}
+
+.description p {
+	margin: 40px 0 0 0;
+	padding: 0 10% 0 25%;	
+	font-size: 1.7em;
+	line-height: 1.7em;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	color: #979797;	
+	font-family: 'Fjalla One', sans-serif;	
+}
+
+.list h1 {
+	margin: 0;
+	padding-left: 25%;
+	font-size: 3em;	
+}
+
+.list ul {	
+	margin: 40px 0 0 0;
+	padding: 0 0 0 25%;
+	list-style-type: none;
+}
+
+.list li {
+	margin: 0 0 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list p {	
+	margin: 0;
+	font-size: 1.7em;
+}
+
+.list i {
+	color: #696969;
+	font-size: 1.8em;
+	margin: 0 8px 0 0;
+}
+
 .contact-wrap {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;	
-	height: 100%;
-	/*border: 1px solid white;*/
+	height: 100%;	
 }
 
 .contact-icons {
@@ -282,7 +442,7 @@ body {
 #opeezy {
 	text-decoration: none;
 	color: blue;
-}	
+}
 
 @media only screen and (max-width: 1145px) {
 	#navbar {		
