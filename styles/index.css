@@ -1,15 +1,11 @@
-html {
-	-webkit-text-size-adjust: 100%;
-}
-
 body {
-	margin:0;
-	/*background-image: url('http://www.gleannlochlandscaping.com/wp-content/themes/land2/images/sliders/01.jpg');*/
+	-webkit-text-size-adjust: 100%;
+	margin:0;	
 	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
 	background-repeat: no-repeat;
-	background-size: fixed;
-	background-position: 50% 40%;
-	background-attachment: fixed;	
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;	
 }
 
 #navbar {	
@@ -44,7 +40,25 @@ body {
 	opacity: .8;
 }
 
-.nav-links {
+#home-link {
+	margin-left: 15px;
+	margin-right: auto;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	font-size: 3em;
+	transition: color .3s;	
+}
+
+#home-link:hover {
+	color: #7CFF00;
+}
+
+.nav-links {	
 	white-space: nowrap; 	
 	font-family: 'Fjalla One', sans-serif;	
 	display: flex;
@@ -67,6 +81,10 @@ body {
 	margin: 0;
 }
 
+#dummy {
+	margin-left: auto;	
+}
+
 .title {
 	display: flex;
 	justify-content: center;
@@ -75,7 +93,7 @@ body {
 	width: 100%;
 	height: 35em;	
 	color: white;
-	background-color: rgba(182, 182, 182, .3);	
+	background-color: rgba(182, 182, 182, .3);		
 }
 
 .caption {		
@@ -130,8 +148,7 @@ body {
 
 .caption a:hover {
 	color: #7CFF00;
-	border-color: #7CFF00;
-	/*background-color: rgba(255, 255, 255, .4);*/
+	border-color: #7CFF00;	
 }
 
 .divider {
@@ -375,6 +392,10 @@ body {
 }
 
 @media only screen and (max-width: 1145px) {
+	#dummy {
+		display: none;
+	}
+
 	#navbar {		
 		width: 100%;
 		height: 5em;
@@ -382,6 +403,7 @@ body {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		z-index: 3;
 	}
 
 	.nav-links {
@@ -400,7 +422,7 @@ body {
 		border: 3px solid white;
 		border-radius: 10px;
 		transition: all .5s;
-		cursor: pointer;
+		cursor: pointer;		
 	}
 
 	.drop-down:hover {
@@ -468,6 +490,37 @@ body {
 
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
+	body {
+		background-image: none;
+	}
+
+	#spacer {
+		display: none;
+	}
+
+	.title {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.title:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.caption {
+		z-index: 2;
+	}	
+
 	.caption h1 {		
 		font-size: 1.9em;			
 	}
@@ -503,6 +556,37 @@ body {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 465px) {
+	body {
+		background-image: none;
+	}
+
+	#spacer {
+		display: none;
+	}
+
+	.title {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.title:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.caption {
+		z-index: 2;
+	}	
+
 	.caption h1 {		
 		font-size: 2.25em;			
 	}
@@ -538,6 +622,37 @@ body {
 }
 
 @media only screen and (min-width: 465px) and (max-width: 580px) {
+
+	body {
+		background-image: none;
+	}
+
+	#spacer {
+		display: none;
+	}
+
+	.title {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.title:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.caption {
+		z-index: 2;
+	}	
 	.caption h1 {		
 		font-size: 2.7em;			
 	}
@@ -573,6 +688,37 @@ body {
 }
 
 @media only screen and (min-width: 580px) and (max-width: 730px) {
+	body {
+		background-image: none;
+	}
+
+	#spacer {
+		display: none;
+	}
+
+	.title {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.title:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.caption {
+		z-index: 2;
+	}
+	
 	.caption h1 {		
 		font-size: 3.4em;			
 	}
