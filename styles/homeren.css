@@ -706,8 +706,32 @@ body {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 425px) {
+	body {
+		background-image: none;
+	}	
+
+	.homes {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.homes:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}	
+
 	.homes h1 {				
-		font-size: 3.2em;		
+		font-size: 3.2em;
+		z-index: 2;		
 	}
 
 	.images {
@@ -815,8 +839,32 @@ body {
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
+	body {
+		background-image: none;
+	}	
+
+	.homes {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.homes:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
 	.homes h1 {				
-		font-size: 3.5em;		
+		font-size: 3.5em;
+		z-index: 2;		
 	}
 
 	.images {
