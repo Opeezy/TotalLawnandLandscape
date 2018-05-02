@@ -81,6 +81,10 @@ body {
 	margin: 0;
 }
 
+#contact-link {
+	cursor: pointer;
+}
+
 #dummy {
 	margin-left: auto;	
 }
@@ -339,8 +343,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;	
-	height: 100%;
-	/*border: 1px solid white;*/
+	height: 100%;	
 }
 
 .contact-icons {
@@ -351,8 +354,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100%;	
-	list-style-type: none;
-	/*border-bottom: 1px solid white;	*/
+	list-style-type: none;		
 	padding-bottom: 20px;	
 }
 
@@ -718,7 +720,7 @@ body {
 	.caption {
 		z-index: 2;
 	}
-	
+
 	.caption h1 {		
 		font-size: 3.4em;			
 	}

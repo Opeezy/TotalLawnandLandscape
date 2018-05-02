@@ -161,6 +161,10 @@ body {
 	height: 100%;	
 }
 
+#contact-link {
+	cursor: pointer;
+}
+
 .nav-links:hover {
 	background-color: #B6B6B6; 
 	color: #141414;

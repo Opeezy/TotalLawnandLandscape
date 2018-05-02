@@ -9,12 +9,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 		$(document).ready(function(){
+			 $('#contact-link').click(function() {
+		   		$('html, body').animate({
+				    scrollTop: $(document).height()
+				}, 2000);
+		   		})
+	   		$('#contact-link-dd').click(function() {
+		   		$('html, body').animate({
+				    scrollTop: $(document).height()
+				}, 2000);
+	   		})		
 		   $('#scroll').click(function() {
 		   		$('html, body').animate({
 				    scrollTop: ($('#info').offset().top - 80)
-				},1500);
-		   		})
-		   // alert($('html').scrollTop())
+				}, 1500);
+		   		})		   
 		   $(window).scroll(function() {		   		
 		   		 if ($('html').scrollTop() > 0) {
 			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
@@ -64,10 +73,7 @@
 						$('#nav-drop > a').removeClass('drop-links-invis');
 						$('#nav-drop > a').addClass('drop-links');
 						$('#nav-drop > a').fadeTo(100, 1);	
-					});
-					// $('#nav-drop > a').removeClass('drop-links-invis');
-					// $('#nav-drop > a').addClass('drop-links');
-					// $('#nav-drop > a').fadeTo(300, 1);					
+					});								
 				} else {
 					$('#nav-drop > a').fadeTo(300, 0);
 					$('#nav-drop > a').removeClass('drop-links');
@@ -77,12 +83,7 @@
 					}, 600, function() {																
 						$('#nav-drop').removeClass('nav-drop');
 						$('#nav-drop').addClass('nav-drop-invis');
-					});
-					// $('#nav-drop > a').removeClass('drop-links');
-					// $('#nav-drop > a').addClass('drop-links-invis');										
-					// $('#nav-drop').removeClass('nav-drop');
-					// $('#nav-drop').addClass('nav-drop-invis');
-					// $('#nav-drop').height(0);					
+					});									
 				}
 			})
 			$(window).resize(function() {
@@ -108,15 +109,17 @@
 			<div class="bar"></div>
 			<div class="bar"></div>
 		</div>		
-		<a id="lnk1" class="nav-links" href=""><p>Fence Design</p></a>
-		<a id="lnk2" class="nav-links" href=""><p>Landscaping</p></a>
-		<a id="lnk3" class="nav-links" href="homeren.html"><p>Home Renovation</p></a>
+		<a class="nav-links" href="fencedesign.html"><p>Fence Design</p></a>
+		<a class="nav-links" href="landscaping.html"><p>Landscaping</p></a>
+		<a class="nav-links" href="homeren.html"><p>Home Renovation</p></a>
+		<a id="contact-link" class="nav-links"><p>Contact</p></a>
 		<div id="dummy"></div>			
 	</nav>
 	<nav id="nav-drop" class="nav-drop-invis">
-		<a class="drop-links-invis"><p>Fence Design</p></a>
-		<a class="drop-links-invis"><p>Landscaping</p></a>
-		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>	
+		<a class="drop-links-invis" href="fencedesign.html"><p>Fence Design</p></a>
+		<a class="drop-links-invis" href="landscaping.html"><p>Landscaping</p></a>
+		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>
+		<a id="contact-link-dd" class="drop-links-invis"><p>Contact</p></a>	
 	</nav>	
 	<section class="title">		
 		<div class="caption">
@@ -197,7 +200,7 @@
 		<div id="i-4" class="indicator"></div>
 	</section>
 	<footer class="contact">
-		<div class="contact-wrap">
+		<div class="contact-wrap">			
 			<ul class="contact-icons">
 				<li id="fb" class="contact-icon"><a href=""><i class="fa fa-facebook-square"></i></a></li>
 				<li  id="email" class="contact-icon"><a href=""><i class="fa fa-envelope-o"></i></a></li>
