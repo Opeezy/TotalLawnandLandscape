@@ -49,7 +49,7 @@ body {
 	top: 15%;
 	left: 15%;	
 	border-radius: 50px;
-	box-shadow: 0 0 50px white;
+	box-shadow: 0 0 50px #CDCDCD;
 }
 
 .zoomed-image-img1 {
@@ -341,13 +341,13 @@ body {
 .description h1 {
 	white-space: nowrap;
 	margin: 0;
-	padding-left: 25%;	
+	padding-left: 10%;	
 	font-size: 3em;	
 }
 
 .description p {
 	margin: 40px 0 0 0;
-	padding: 0 10% 0 25%;	
+	padding: 0 25% 0 10%;	
 	font-size: 1.7em;
 	line-height: 1.7em;
 }
@@ -365,13 +365,13 @@ body {
 
 .list h1 {
 	margin: 0;
-	padding-left: 25%;
+	padding-left: 10%;
 	font-size: 3em;	
 }
 
 .list ul {	
 	margin: 40px 0 0 0;
-	padding: 0 0 0 25%;
+	padding: 0 0 0 10%;
 	list-style-type: none;
 }
 
@@ -758,7 +758,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
 	.homes h1 {				
 		font-size: 3.5em;		
 	}
@@ -866,3 +866,95 @@ body {
 		margin-left: 35px;		
 	}
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.images {
+		display: flex;	
+		flex-direction: row;		
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;		
+		width: 100%;
+		height: 25%;
+		margin: 35px 0 0 0;	
+	}
+
+	.image-overflow {	
+		width: 44%;	
+		height: 50%;	
+		border-radius: 15px;
+		overflow: hidden;
+		margin: 2%;		
+	}
+
+	.image-container {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		width: 100%;	
+		height: 100%;	
+		border-radius: 0;
+		overflow: hidden;
+		transition: all .3s;
+		cursor: pointer;	
+	}
+
+	.image-container h1 {
+		display: none;
+	}
+
+	.image-container:after {	
+		display: none;	
+	}
+
+	.description h1 {		
+		font-size: 2.5em;	
+	}
+
+	.description p {		
+		font-size: 1.1em;		
+	}
+
+	.list h1 {		
+		font-size: 2.5em;	
+	}
+
+	.list ul {		
+		padding: 0 0 0 10%;	
+	}
+
+	.list p {		
+		font-size: 1.1em;
+	}
+
+	.list i {		
+		font-size: 1.5em;		
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1560px) {
+	.description h1 {			
+		font-size: 3em;	
+	}
+
+	.description p {			
+		font-size: 1.3em;	
+	}
+
+	.list h1 {		
+		font-size: 3em;	
+	}	
+
+	.list p {		
+		font-size: 1.3em;
+	}
+
+	.list i {	
+		font-size: 1.6em;		
+	}
+}
+
+
