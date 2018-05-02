@@ -476,6 +476,10 @@ body {
 }
 
 @media only screen and (max-width: 1145px) {
+	.zoomed-bg {
+		z-index: 4;
+	}
+
 	#dummy {
 		display: none;
 	}
