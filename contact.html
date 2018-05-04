@@ -3,12 +3,22 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="styles/homeren.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 	<script>
-		$(document).ready(function(){			
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			 $('#contact-link').click(function() {
+		   		$('html, body').animate({
+				    scrollTop: ($('.contact-section').offset().top - 80)
+				}, 2000);
+		   		})
+	   		$('#contact-link-dd').click(function() {
+		   		$('html, body').animate({
+				     scrollTop: ($('.contact-section').offset().top - 80)
+				}, 2000);
+	   		})				  
 		   $(window).scroll(function() {		   		
 		   		 if ($('html').scrollTop() > 0) {
 			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
@@ -83,7 +93,7 @@
 		});		
 	</script>  
 
-	<title>Landscaping</title>
+	<title>Contact</title>
 </head>
 <body>
 	<nav id="navbar" class="navbar-trans">
@@ -96,76 +106,44 @@
 		<a class="nav-links" href="fencedesign.html"><p>Fence Design</p></a>
 		<a class="nav-links" href="landscaping.html"><p>Landscaping</p></a>
 		<a class="nav-links" href="homeren.html"><p>Home Renovation</p></a>	
-		<a id="contact-link" class="nav-links" href="contact.html"><p>Contact</p></a>
+		<a id="contact-link" class="nav-links"><p>Contact</p></a>
 		<div id="dummy"></div>			
 	</nav>
 	<nav id="nav-drop" class="nav-drop-invis">
 		<a class="drop-links-invis" href="fencedesign.html"><p>Fence Design</p></a>
 		<a class="drop-links-invis" href="landscaping.html"><p>Landscaping</p></a>
 		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>
-		<a id="contact-link-dd" class="drop-links-invis" href="contact.html"><p>Contact</p></a>	
+		<a id="contact-link-dd" class="drop-links-invis"><p>Contact</p></a>	
 	</nav>
-	<section class="homes">
-		<h1>Landscaping</h1>			
-	</section>
-	<div id="top-divider"></div>
-	<section class="home-info">		
-		<div class="images">
-			<div class="image-overflow">
-				<div id="img1" class="image-container"><h1>Caption</h1></div>
-			</div>
-			<div class="image-overflow">
-				<div id="img2" class="image-container"><h1>Caption</h1></div>
-			</div>
-			<div class="image-overflow">
-				<div id="img3" class="image-container"><h1>Caption</h1></div>
-			</div>
-			<div class="image-overflow">
-				<div id="img4" class="image-container"><h1>Caption</h1></div>
-			</div>			
+	<section class="contact-header">
+		<h1>Contact</h1>
+	</section>	
+	<section class="contact-section">
+		<div id="top-divider"></div>
+		<div class="contact-form">		
+			<form method="POST">
+				<input class="input-text" name="Email" type="email" placeholder="Your Email:" required>
+				<input class="input-text" name="Subject" type="text" placeholder="Subject:">
+				<textarea name="Message" placeholder="Message" required></textarea>
+				<input id="input-button" type="submit" value="Submit">
+			</form>	
 		</div>
-		<div class="homes-text">
-			<div class="description">
-				<div class="header">
-					<h1>No Place Like Home</h1>
+		<div id="middle-divider"></div>		
+		<div class="contact-info">
+			<div class="info-box">
+				<div id="phone-number">
+					<h1>Phone:</h1><br>
+					<p>(xxx)-xxx-xxxx</p>
 				</div>
-				<div class="text">					
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>
+				<div id="address">
+					<h1>Address:</h1><br>
+					<p>0000 Someplace Ave<br>
+						Birmingham, AL 00000 </p>					
 				</div>
-			</div>
-			<div class="list">
-				<div class="header">
-					<h1>Services</h1>
-				</div>
-				<div class="text">					
-					<ul>
-						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
-						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
-						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
-						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
-						<li><i class="fa fa-cubes"></i><p>Lorem ipsum dolor sit amet</p></li>
-					</ul>
-				</div>
-			</div>
-		</div>		
-	</section>
-	<div id="bottom-divider">
-		<a href=""><h1>Gallery</h1></a>
-	</div>
-	<div id="zoom" class="zoomed-bg-invis">
-		<i id="zoomed-exit" class="fa fa-close"></i>
-		<div class="zoomed-image">
-			<div class="zoomed-text">
-				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 		</div>
-	</div>	
+		<div id="bottom-divider"></div>
+	</section>
 	<footer class="contact">
 		<div class="contact-wrap">
 			<ul class="contact-icons">

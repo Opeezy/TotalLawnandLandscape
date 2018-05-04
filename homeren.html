@@ -8,17 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  	<script>
-		$(document).ready(function(){
-			 $('#contact-link').click(function() {
-		   		$('html, body').animate({
-				    scrollTop: $(document).height()
-				}, 2000);
-		   		})
-	   		$('#contact-link-dd').click(function() {
-		   		$('html, body').animate({
-				    scrollTop: $(document).height()
-				}, 2000);
-	   		})				  
+		$(document).ready(function(){			
 		   $(window).scroll(function() {		   		
 		   		 if ($('html').scrollTop() > 0) {
 			   		$('#navbar').addClass('navbar-full').removeClass('navbar-trans');
@@ -106,14 +96,14 @@
 		<a class="nav-links" href="fencedesign.html"><p>Fence Design</p></a>
 		<a class="nav-links" href="landscaping.html"><p>Landscaping</p></a>
 		<a class="nav-links" href="homeren.html"><p>Home Renovation</p></a>	
-		<a id="contact-link" class="nav-links"><p>Contact</p></a>
+		<a id="contact-link" class="nav-links" href="contact.html"><p>Contact</p></a>
 		<div id="dummy"></div>			
 	</nav>
 	<nav id="nav-drop" class="nav-drop-invis">
 		<a class="drop-links-invis" href="fencedesign.html"><p>Fence Design</p></a>
 		<a class="drop-links-invis" href="landscaping.html"><p>Landscaping</p></a>
 		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>
-		<a id="contact-link-dd" class="drop-links-invis"><p>Contact</p></a>	
+		<a id="contact-link-dd" class="drop-links-invis" href="contact.html"><p>Contact</p></a>	
 	</nav>
 	<section class="homes">
 		<h1>Home Renovation</h1>			

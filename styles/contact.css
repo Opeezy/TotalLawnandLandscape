@@ -1,0 +1,914 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;		
+}
+
+#navbar {	
+	margin: 0;	
+	width: 100%;
+	height: 5em;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	transition: all .5s;
+}
+
+.nav-drop-invis{
+	display: none;
+	height: 0;
+}
+
+.drop-links-invis{
+	display: none;
+	height: 0;
+}
+
+.navbar-full {	
+	background: #313030;
+	z-index: 1;	
+}
+
+.navbar-trans {
+	background: #313030;
+	opacity: .8;
+}
+
+#home-link {
+	margin-left: 15px;
+	margin-right: auto;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	font-size: 3em;
+	transition: color .3s;	
+}
+
+#home-link:hover {
+	color: #7CFF00;
+}
+
+.nav-links {
+	white-space: nowrap; 	
+	font-family: 'Fjalla One', sans-serif;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	width: 15%;
+	height: 100%;	
+}
+
+#contact-link {
+	cursor: pointer;
+}
+
+.nav-links:hover {
+	background-color: #B6B6B6; 
+	color: #141414;
+}
+
+.nav-links p {
+	font-size: 1.7em;
+	transition: all .5s;
+	margin: 0;
+}
+
+#dummy {
+	margin-left: auto;	
+}
+
+.contact-header {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	text-align: center;	
+	width: 100%;
+	height: 35em;	
+	color: white;
+	background-color: rgba(182, 182, 182, .3);
+}
+
+.contact-header h1 {	
+	white-space: nowrap;
+	font-family: 'Fjalla One', sans-serif;
+	margin: 0;		
+	font-size: 4.2em;
+	z-index: 0		
+}
+
+.contact-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 35em;
+	background-color: white;
+}
+
+.contact-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 49.5%;
+	height: 100%;	
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 75%;
+	height: 75%;	
+	/*border: 1px solid black;*/
+}
+
+.input-text, textarea, #input-button {
+	padding: 0;
+	margin: auto 0;
+}
+
+.input-text {
+	font-size: 1em;
+	padding-left: 1%;
+	width: 99%;
+	height: 7%;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+.input-text:focus, textarea:focus {
+	outline: none;	
+	border-color: red;
+}
+
+textarea {
+	font-size: 1.3em;
+	resize: none;
+	padding-left: 1%;	
+	width: 99%;
+	height: 50%;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+#input-button {
+	width: 30%;
+	height: 20%;
+	background-color: white;	
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: gray;
+	font-size: 1.5em;	
+	border:1px solid gray;
+	border-radius: 10px;	
+	cursor: pointer;
+	transition: all 1s;
+}
+
+#input-button:hover {	
+	background-color: red;
+	color: white;	
+}
+
+#top-divider {
+	display: none;
+}
+
+#middle-divider {
+	width: 1%;
+	height: 100%;
+	background-color: #DCDCDC;	
+}
+
+#bottom-divider {
+	display: none;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	width: 49.5%;
+	height: 100%;	
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*border: 1px solid black;*/
+	width: 75%;
+	height: 75%;
+}
+
+#phone-number, #address {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;	
+	justify-content: flex-start;
+	align-items: flex-start;	
+	width: 100%;
+	height: 50%;
+	color: gray;	
+}
+
+#phone-number h1, #address h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+#phone-number p, #address p {
+	white-space: nowrap;
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+.contact {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 25em;
+	background-color: #313030;	
+}
+
+.contact-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+	height: 100%;	
+}
+
+.contact-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	width: 100%;	
+	list-style-type: none;
+	/*border-bottom: 1px solid white;	*/
+	padding-bottom: 20px;	
+}
+
+.contact-icon a{
+	margin-right: 40px;
+	margin-left: 40px;
+	text-decoration: none;
+	font-size: 3.5em;
+	color: white;
+}
+
+#fb:hover a{
+	color: #4267b2;
+}
+
+#email:hover a{
+	color: yellow;
+}
+
+#phone:hover a{
+	color: red;
+}
+
+.contact-wrap p{
+	color: white;
+	font-size: 1.2em;
+	margin: 20px 0 50px 0;
+}
+
+#heart {
+	color: red;
+}
+
+#opeezy {
+	text-decoration: none;
+	color: blue;
+}
+
+@media only screen and (max-width: 1145px) {
+	.zoomed-bg {
+		z-index: 4;
+	}
+
+	#dummy {
+		display: none;
+	}
+	
+	#navbar {		
+		width: 100%;
+		height: 5em;
+		margin: 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		z-index: 3;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	.drop-down {		
+		margin: 0 15px 0 0;
+	    padding: 0 8px 0 8px;	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		border: 3px solid white;
+		border-radius: 10px;
+		transition: all .5s;
+		cursor: pointer;
+	}
+
+	.drop-down:hover {
+		background-color: #B6B6B6; 	
+	}
+
+	.drop-down:hover .bar {
+		background-color: #141414 
+	}
+
+	.bar {
+		margin: 7% 0;	
+		border-radius: 10px;	
+		width: 100%;
+		height: 10%;
+		background-color: white;
+	}
+
+	.nav-drop-invis{
+		height: 0;
+		display: none;				
+	}
+
+	.drop-links-invis {
+		height: 0;
+		display: none;		
+	}
+
+	.nav-drop {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 0;
+		margin: 0;
+		position: fixed;
+		top: 5em;
+		background: rgba(49, 48, 48, .8);
+		z-index: 1;
+		border-top: 1px solid white;		
+	}
+
+	.drop-links {
+		font-family: 'Fjalla One', sans-serif;
+		opacity: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		color: white;
+		width: 100%;
+		height: 33.33%;
+		font-size: 1.7em;
+		text-decoration: none;
+		padding-left: 10px;
+		cursor: pointer;
+		transition: all .5s;
+	}
+
+	.drop-links:hover {
+		background: rgba(182, 182, 182, .8);
+		color: #141414;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+	body {
+		background-image: none;
+	}	
+
+	.contact-header {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.contact-header:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 35em;
+		background-color: white;
+	}
+
+	.contact-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;			
+	}
+
+	.input-text, textarea, #input-button {
+		padding: 0;
+		margin: auto 0;
+	}
+
+	.input-text {
+		font-size: 1em;
+		padding-left: 1%;
+		width: 99%;
+		height: 7%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	.input-text:focus, textarea:focus {
+		outline: none;	
+		border-color: red;
+	}
+
+	textarea {
+		font-size: 1.3em;
+		resize: none;
+		padding-left: 1%;	
+		width: 99%;
+		height: 50%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	#input-button {
+		width: 100%;
+		height: 20%;
+		background-color: white;	
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: gray;
+		font-size: 1.5em;	
+		border:1px solid gray;
+		border-radius: 10px;	
+		cursor: pointer;
+		transition: all 1s;
+	}
+
+	#input-button:hover {	
+		background-color: red;
+		color: white;	
+	}
+
+	#top-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#middle-divider {
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#bottom-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Open Sans Condensed', sans-serif;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	.info-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;		
+		width: 100%;
+		height: 100%;
+	}
+
+	#phone-number, #address {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;	
+		justify-content: flex-start;
+		align-items: flex-start;	
+		width: 50%;
+		height: 50%;
+		color: gray;	
+	}
+
+	#phone-number h1, #address h1 {
+		font-size: 1.8em;
+		margin: 0;
+	}
+
+	#phone-number p, #address p {		
+		font-size: .9em;
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact-icon a{
+		margin-right: 25px;
+		margin-left: 25px;		
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+	body {
+		background-image: none;
+	}	
+
+	.contact-header {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.contact-header:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 35em;
+		background-color: white;
+	}
+
+	.contact-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;			
+	}
+
+	.input-text, textarea, #input-button {
+		padding: 0;
+		margin: auto 0;
+	}
+
+	.input-text {
+		font-size: 1em;
+		padding-left: 1%;
+		width: 99%;
+		height: 7%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	.input-text:focus, textarea:focus {
+		outline: none;	
+		border-color: red;
+	}
+
+	textarea {
+		font-size: 1.3em;
+		resize: none;
+		padding-left: 1%;	
+		width: 99%;
+		height: 50%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	#input-button {
+		width: 100%;
+		height: 20%;
+		background-color: white;	
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: gray;
+		font-size: 1.5em;	
+		border:1px solid gray;
+		border-radius: 10px;	
+		cursor: pointer;
+		transition: all 1s;
+	}
+
+	#input-button:hover {	
+		background-color: red;
+		color: white;	
+	}
+
+	#top-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#middle-divider {
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#bottom-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Open Sans Condensed', sans-serif;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	.info-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;		
+		width: 100%;
+		height: 100%;
+	}
+
+	#phone-number, #address {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;	
+		justify-content: flex-start;
+		align-items: flex-start;	
+		width: 50%;
+		height: 50%;
+		color: gray;	
+	}
+
+	#phone-number h1, #address h1 {
+		font-size: 2em;
+		margin: 0;
+	}
+
+	#phone-number p, #address p {		
+		font-size: 1em;
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact-icon a{
+		margin-right: 25px;
+		margin-left: 25px;		
+	}
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+	body {
+		background-image: none;
+	}	
+
+	.contact-header {
+		position: relative;
+		background-image: url('../images/thirsty-turf-irrigation-27062-unsplash.jpg'); 
+		background-size: cover;
+		background-position: center center;
+		z-index: 0;
+	}
+
+	.contact-header:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(182, 182, 182, .3); 
+		z-index: 1;
+	}
+
+	.contact-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 35em;
+		background-color: white;
+	}
+
+	.contact-form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;			
+	}
+
+	.input-text, textarea, #input-button {
+		padding: 0;
+		margin: auto 0;
+	}
+
+	.input-text {
+		font-size: 1em;
+		padding-left: 1%;
+		width: 99%;
+		height: 7%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	.input-text:focus, textarea:focus {
+		outline: none;	
+		border-color: red;
+	}
+
+	textarea {
+		font-size: 1.3em;
+		resize: none;
+		padding-left: 1%;	
+		width: 99%;
+		height: 50%;
+		border: 1px solid gray;
+		border-radius: 10px;
+	}
+
+	#input-button {
+		width: 100%;
+		height: 20%;
+		background-color: white;	
+		font-family: 'Open Sans Condensed', sans-serif;
+		color: gray;
+		font-size: 1.5em;	
+		border:1px solid gray;
+		border-radius: 10px;	
+		cursor: pointer;
+		transition: all 1s;
+	}
+
+	#input-button:hover {	
+		background-color: red;
+		color: white;	
+	}
+
+	#top-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#middle-divider {
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	#bottom-divider {
+		display: block;
+		width: 100%;
+		height: 1%;
+		background-color: #DCDCDC;	
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Open Sans Condensed', sans-serif;
+		width: 90%;
+		height: 49.5%;	
+	}
+
+	.info-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;		
+		width: 100%;
+		height: 100%;
+	}
+
+	#phone-number, #address {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;	
+		justify-content: flex-start;
+		align-items: flex-start;	
+		width: 50%;
+		height: 50%;
+		color: gray;	
+	}
+
+	#phone-number h1, #address h1 {
+		font-size: 2em;
+		margin: 0;
+	}
+
+	#phone-number p, #address p {		
+		font-size: 1.1em;
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact-icon a{
+		margin-right: 25px;
+		margin-left: 25px;		
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+	#input-button {
+		width: 100%;
+		height: 20%;		
+	}	
+}
+
