@@ -35,9 +35,8 @@
 					subject: $("input[name='Subject']").val(),
 					message: $('textarea').val()
 				};
-				$.ajax({
-					//https://tll-server-tll-server.7e14.starter-us-west-2.openshiftapps.com
-					url: "http://localhost:3001",
+				$.ajax({					
+					url: "https://tll-server-tll-server.7e14.starter-us-west-2.openshiftapps.com",
 					method: "post",
 					data: formData,
 					dataType: "json",
