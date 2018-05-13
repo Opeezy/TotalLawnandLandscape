@@ -8,31 +8,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-		$(document).ready(function(){
+		$(document).ready(function(){			
+			$('#ajax-alert').click(function() {			
+				$('#ajax-alert').removeClass('visible');
+				$('#ajax-alert').animate({
+					left: "100%"
+				}, 1000, function() {
+					if ($('#status').hasClass('status-fail')) {
+						$('#status').removeClass('status-fail');
+						$('#status-icon').removeClass('fa fa-times-circle');
+					} else {
+						$('#status').removeClass('status-success');
+						$('#status-icon').removeClass('fa fa-check-circle');
+					}
+				});				
+			})
+			$(window).resize(function() {
+				if ($('#ajax-alert').hasClass('visible')) {
+					$('#ajax-alert').offset({ left: $(document).width()-$("#ajax-alert").width() });
+				}
+			})
 			$("form[name='email-form']").submit(function(e) {
+				$('#input-button').val('Sending...');
 				const formData = {
 					email: $("input[name='Email']").val(),
 					subject: $("input[name='Subject']").val(),
 					message: $('textarea').val()
 				};
 				$.ajax({
-					url: "https://tll-server-tll-server.7e14.starter-us-west-2.openshiftapps.com",
+					//https://tll-server-tll-server.7e14.starter-us-west-2.openshiftapps.com
+					url: "http://localhost:3001",
 					method: "post",
 					data: formData,
 					dataType: "json",
 					statusCode: {
-						200: function() {
-							alert('Email sent!');
+						200: function(data, textStatus, jqXHR) {
+							console.log(textStatus);						
+							$('#status').addClass('status-success');
+							$('#status-icon').addClass('fa fa-check-circle');
+							$('#status-message').text(data);
+							$('#ajax-alert').addClass('visible');
+							$('#ajax-alert').animate({
+								left: $(document).width()-$("#ajax-alert").width()
+							}, 1000);
+						}, 
+						400: function(jqXHR, textStatus, error) {
+							console.log(textStatus);
+							console.log(error);						
+							$('#status').addClass('status-fail');
+							$('#status-icon').addClass('fa fa-times-circle');
+							$('#status-message').text('Fill out required fields!');
+							$('#ajax-alert').addClass('visible');
+							$('#ajax-alert').animate({
+								left: $(document).width()-$("#ajax-alert").width()
+							}, 1000);
 						},
-						400: function() {
-							alert('Could not send email!');
-						},
-						500: function() {
-							alert('Server error!')
-						}												
+						500: function(jqXHR, textStatus, error) {
+							console.log(textStatus);
+							console.log(error);						
+							$('#status').addClass('status-fail');
+							$('#status-icon').addClass('fa fa-times-circle');
+							$('#status-message').text('Server error!');
+							$('#ajax-alert').addClass('visible');
+							$('#ajax-alert').animate({
+								left: $(document).width()-$("#ajax-alert").width()
+							}, 1000);
+						}
+					},					
+					complete: function() {						
+						$("input[name='Email']").val("");
+						$("input[name='Subject']").val("");
+					    $('textarea').val("");
+						$('#input-button').val('Submit');
 					}														
-				})
-				console.log(formData);				
+				});											
 				e.preventDefault();
 			});
 			 $('#contact-link').click(function() {
@@ -141,6 +190,12 @@
 		<a class="drop-links-invis" href="homeren.html"><p>Home Renovation</p></a>
 		<a id="contact-link-dd" class="drop-links-invis"><p>Contact</p></a>	
 	</nav>
+	<section id="alert-wrap">
+		<div id="ajax-alert" class="">
+			<div id="status" class=""><i id="status-icon" class=""></i></div>
+			<div id="status-message"></div>
+		</div>
+	</section>
 	<section class="contact-header">
 		<h1>Contact</h1>
 	</section>	

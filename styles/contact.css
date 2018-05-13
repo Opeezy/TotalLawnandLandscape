@@ -89,6 +89,59 @@ body {
 	margin-left: auto;	
 }
 
+#alert-wrap {
+	position: fixed;
+	top: 80px;
+	display: flex;
+	justify-content: flex-end;	
+	width: 100%;	
+}
+
+#ajax-alert {
+	position: absolute;
+	left: 100%;
+	display: flex;	
+	width: 400px;
+	height: 2em;
+	border-top: 2px solid gray;
+	border-left: 2px solid gray;
+	border-bottom: 2px solid gray;
+	background-color: white;
+}
+
+.status-success {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	width: 10%;
+	height: 100%;
+	font-size: 1.5em;
+	color: white;	
+}
+
+.status-fail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: red;
+	width: 10%;
+	height: 100%;
+	font-size: 1.5em;
+	color: white;	
+}
+
+#status-message {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 100%;
+	font-family: 'Fjalla One', sans-serif;
+	color: gray;
+	font-size: 1.5em;
+}
+
 .contact-header {
 	display: flex;
 	justify-content: center;
@@ -180,6 +233,10 @@ textarea {
 #input-button:hover {	
 	background-color: red;
 	color: white;	
+}
+
+#input-button:focus {
+	outline: none;	
 }
 
 #top-divider {
